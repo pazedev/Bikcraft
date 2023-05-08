@@ -1,0 +1,23 @@
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* UTILIDADE */
+@import "./tools/tipografia.css";
+@import "./tools/componentes.css";
+@import "./tools/colors.css";
+
+/* HOME */
+@import "./home/introducao.css";
+@import "./home/tech.css";
+@import "./home/partners.css";
+@import "./home/depoiment.css";
+
+/* BIKES */
+@import "./bikes/bikes-list.css";
+
+/* SAFES */
+@import "./safes/safes.css";
+
+/* TERMS */
+@import "./terms/terms.css"

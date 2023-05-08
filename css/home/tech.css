@@ -1,0 +1,83 @@
+.tech-bg {
+  background-color: var(--cor-11);
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
+}
+
+.tech {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.tech-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.tech-content {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.tech-content > span {
+  margin-bottom: 20px;
+  display: block; /*span é inline tradicionalmente*/
+}
+
+.tech-content h2 {
+  margin-bottom: 32px;
+}
+
+.tech-content > p {
+  margin-bottom: 20px;
+}
+
+.tech-content a {
+  margin-bottom: 80px;
+}
+
+.tech-vantagens {
+  display: flex;
+  gap: 40px;
+}
+
+.tech-vantagens h3 {
+  margin-bottom: 8px;
+  width: max-content;
+}
+
+.tech-vantagens img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+/* DESIGN RESPONSIVO */
+@media (max-width: 800px) {
+  .tech-bg {
+    box-shadow: initial;
+  }
+
+  .tech-img {
+    display: none;
+  }
+  .tech {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .tech-content a {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tech-vantagens {
+    flex-direction: column;
+  }
+}
